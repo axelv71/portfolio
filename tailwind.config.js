@@ -5,7 +5,20 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+      },
+      colors: {
+        primary: '#00A995',
+        secondary: '#00FFE0',
+        background: '#041A34',
+      },
+      fontFamily: {
+        'roboto-mono': ["Roboto Mono", 'Verdana', 'sans-serif'],
+        'staatliches': ["Staatliches", 'Helvetica', 'sans-serif']
+      }
+    },
   },
   plugins: [],
 }
