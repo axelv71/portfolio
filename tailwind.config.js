@@ -15,8 +15,8 @@ module.exports = {
         background: '#041A34',
       },
       fontFamily: {
-        'roboto-mono': ["Roboto Mono", 'Verdana', 'sans-serif'],
-        'staatliches': ["Staatliches", 'Helvetica', 'sans-serif']
+        'roboto-mono': ['var(--font-robotoMono)', 'Verdana', 'sans-serif'],
+        'staatliches': ['var(--font-staatliches)', 'Helvetica', 'sans-serif']
       }
     },
   },

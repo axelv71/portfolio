@@ -21,7 +21,7 @@ function Navigation() {
                     whileTap={{
                         scale: 1.1,
                     }}
-                    className="border border-secondary font-semibold text-secondary text-sm px-4 py-2 font-roboto-mono rounded uppercase">Mon CV</motion.button>
+                    className="border border-secondary text-secondary text-sm px-4 py-2 font-roboto-mono font-semibold rounded uppercase" >Mon CV</motion.button>
             </nav>
         </>
     )
