@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Home from "../components/Home";
 import Navigation from "../components/Navigation";
+import About from "../components/About";
 
 function Index() {
   return (
@@ -12,6 +13,7 @@ function Index() {
         <main className="bg-background">
             <Navigation />
             <Home />
+            <About />
         </main>
     </>
   )

@@ -14,6 +14,9 @@ module.exports = {
         secondary: '#00FFE0',
         background: '#041A34',
       },
+      spacing: {
+        '128': '32rem',
+      },
       fontFamily: {
         'roboto-mono': ['var(--font-robotoMono)', 'Verdana', 'sans-serif'],
         'staatliches': ['var(--font-staatliches)', 'Helvetica', 'sans-serif']

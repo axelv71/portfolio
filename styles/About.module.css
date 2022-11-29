@@ -1,0 +1,4 @@
+.list_triangle {
+    columns: 2;
+    list-style: inside disc;
+}
