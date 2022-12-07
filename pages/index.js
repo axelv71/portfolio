@@ -2,6 +2,7 @@ import Head from "next/head";
 import Home from "../components/Home";
 import Navigation from "../components/Navigation";
 import About from "../components/About";
+import Experiences from "../components/Experiences";
 
 function Index() {
   return (
@@ -14,6 +15,7 @@ function Index() {
             <Navigation />
             <Home />
             <About />
+            <Experiences />
         </main>
     </>
   )

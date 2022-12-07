@@ -11,7 +11,7 @@ import { useGLTF, useAnimations } from "@react-three/drei";
 
 export default function Planet(props) {
     const group = useRef();
-    const { nodes, materials, animations } = useGLTF("3d/planet.gltf");
+    const { nodes, materials, animations } = useGLTF("assets/3d/planet.gltf");
     const { actions } = useAnimations(animations, group);
     return (
         <group ref={group} {...props} dispose={null}>
@@ -45,4 +45,4 @@ export default function Planet(props) {
     );
 }
 
-useGLTF.preload("3d/planet.gltf");
+useGLTF.preload("assets/3d/planet.gltf");

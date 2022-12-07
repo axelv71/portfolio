@@ -6,7 +6,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export default function Boi(props) {
-    const { nodes, materials } = useGLTF("3d/boi.gltf");
+    const { nodes, materials } = useGLTF("assets/3d/boi.gltf");
     return (
         <group {...props} dispose={null} position={[0,-1.5,0]}>
             <group rotation={[-Math.PI / 2, 0, 0]} >
@@ -168,4 +168,4 @@ export default function Boi(props) {
     );
 }
 
-useGLTF.preload("3d/boi.gltf");
+useGLTF.preload("assets/3d/boi.gltf");
