@@ -14,6 +14,7 @@ module.exports = {
         secondary: '#00FFE0',
         tertiary: '#740CDC',
         background: '#041A34',
+        'second-background': '#06264B',
         'dark-blue': '#06264B'
       },
       spacing: {

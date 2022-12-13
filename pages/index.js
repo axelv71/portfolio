@@ -3,6 +3,7 @@ import Home from "../components/Home";
 import Navigation from "../components/Navigation";
 import About from "../components/About";
 import Experiences from "../components/Experiences";
+import Projects from "../components/Projects";
 
 function Index() {
   return (
@@ -16,6 +17,7 @@ function Index() {
             <Home />
             <About />
             <Experiences />
+            <Projects />
         </main>
     </>
   )

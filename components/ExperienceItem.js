@@ -24,7 +24,7 @@ function ExperienceItem({ experience, _id }) {
                 initial="closed"
                 animate={isOpen ? "open" : "closed"}
                 key="experience"
-                className="rounded bg-tertiary text-gray-50 font-rubik px-5 py-4 mt-5"
+                className="rounded bg-tertiary text-gray-50 font-rubik px-5 py-4 mt-5 cursor-pointer"
                 variants={{
                     open: { borderBottomLeftRadius: 0, borderBottomRightRadius: 0 },
                     closed: { borderBottomLeftRadius: 4, borderBottomRightRadius: 4 }
