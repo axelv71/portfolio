@@ -4,22 +4,16 @@ import Navigation from "../components/Navigation";
 import About from "../components/About";
 import Experiences from "../components/Experiences";
 import Projects from "../components/Projects";
+import Layout from "../components/Layout";
 
 function Index() {
   return (
-    <>
-        <Head>
-            <title>Axel VION 🚀</title>
-            <meta name="theme-color" content="#041A34" />
-        </Head>
-        <main className="bg-background">
-            <Navigation />
-            <Home />
-            <About />
-            <Experiences />
-            <Projects />
-        </main>
-    </>
+    <Layout>
+        <Home />
+        <About />
+        <Experiences />
+        <Projects />
+    </Layout>
   )
 }
 

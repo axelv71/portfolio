@@ -2,6 +2,7 @@ import {motion, AnimatePresence, useCycle} from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot, faLink, faCalendar } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import SkillPill from "./SkillPill";
 
 const Rect = (props) => (
     <motion.rect rx="6" {...props} />
@@ -85,9 +86,7 @@ function ExperienceItem({ experience, _id }) {
                                 <div>
                                     <p className="text-gray-50 font-roboto-mono break-words text-sm pr-0 md:pr-9">{experience.description}</p>
                                     <div className="mt-5 flex flex-wrap">
-                                        {experience.skills.map((skill, index) => (
-                                            <span key={`${_id}${index}`} className="rounded-full bg-tertiary text-gray-50 px-4 py-2 font-roboto-mono text-sm mr-2 mt-2">{skill}</span>
-                                        ))}
+                                        {experience.skills.map((skill, index) => <SkillPill key={`${_id}${index}`} skill={skill} />)}
                                     </div>
                                 </div>
                                 <Image src={`/assets/logo/${experience.logo}`} className="float-right w-32 h-32 hidden md:block rounded-lg" width={100} height={100} alt={experience.company.name} />
