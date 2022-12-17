@@ -54,7 +54,7 @@ function Project({ project, otherProjects }) {
                             ) : ''}
                         </div>
                         <p className="font-roboto-mono text-center lg:text-right">{project.description}</p>
-                        <div className="text-center lg:text-right mt-5">
+                        <div className="text-center lg:text-right mt-5 flex flex-wrap justify-center lg:justify-end">
                             {project.skills.map((skill, index) => <SkillPill key={`${project._id}${index}`} skill={skill} />)}
                         </div>
                     </div>
