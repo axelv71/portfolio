@@ -1,8 +1,11 @@
 import localFont from '@next/font/local'
 import '../styles/globals.css'
+import {motion} from "framer-motion";
 
 import "@fortawesome/fontawesome-svg-core/styles.css"; // import Font Awesome CSS
 import { config } from "@fortawesome/fontawesome-svg-core";
+import {AnimatePresence} from "framer-motion";
+import {useRouter} from "next/router";
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 const staatliches = localFont({
@@ -47,11 +50,36 @@ const rubik = localFont({
 })
 
 function MyApp({ Component, pageProps }) {
-  return (
-      <div className={`${staatliches.variable} ${robotoMono.variable} ${rubik.variable}`}>
-        <Component {...pageProps} />
-      </div>
-  )
+    const router = useRouter()
+    return (
+      <AnimatePresence exitBeforeEnter={true}>
+          <motion.div
+              key={router.route}
+              initial="initialState"
+              animate="animateState"
+              exit="exitState"
+              transition={{
+                  duration: 0.75
+              }}
+              variants={{
+                    initialState: {
+                        opacity: 0,
+                        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+                    },
+                    animateState: {
+                        opacity: 1,
+                        clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)"
+                    },
+                  exitState: {
+                      clipPath: "polygon(50% 0, 50% 0, 50% 100%, 50% 100%)"
+                  },
+              }}
+              className={`${staatliches.variable} ${robotoMono.variable} ${rubik.variable}`}
+          >
+              <Component {...pageProps} />
+          </motion.div>
+      </AnimatePresence>
+    )
 }
 
 export default MyApp

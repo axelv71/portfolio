@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: #740CDC;
+}
+
 .unselectable {
   -webkit-user-select: none;
   -webkit-touch-callout: none;
