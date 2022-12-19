@@ -5,6 +5,7 @@ import About from "../components/About";
 import Experiences from "../components/Experiences";
 import Projects from "../components/Projects";
 import Layout from "../components/Layout";
+import Contact from "../components/Contact";
 
 function Index() {
   return (
@@ -13,6 +14,7 @@ function Index() {
         <About />
         <Experiences />
         <Projects />
+        <Contact />
     </Layout>
   )
 }
