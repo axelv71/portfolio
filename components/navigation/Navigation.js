@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar";
 import MenuToggle from "./MenuToggle";
 import ItemList from "./ItemList";
 import styles from '../../styles/Navigation.module.css';
+import Link from "next/link";
 
 function Navigation() {
     const [isOpen, setIsOpen] = useCycle(false, true);
@@ -16,15 +17,22 @@ function Navigation() {
                     <ItemList setIsOpen={setIsOpen} />
                 </div>
                 <MenuToggle isOpen={isOpen} setIsOpen={setIsOpen} />
-                <motion.button
-                    whileHover={{
-                        backgroundColor: '#00FFE0',
-                        color: 'white'
-                    }}
-                    whileTap={{
-                        scale: 1.1,
-                    }}
-                    className="border border-secondary text-secondary text-sm px-4 py-2 font-roboto-mono font-bold rounded uppercase" >Mon CV</motion.button>
+
+                    <motion.a
+                        href="https://drive.google.com/file/d/1iFdI-tqN5Iy1_AZweSlD89a1kAKTUIMz/view?usp=sharing"
+                        target="_blank"
+                        download
+                        whileHover={{
+                            backgroundColor: '#00FFE0',
+                            color: 'white'
+                        }}
+                        whileTap={{
+                            scale: 1.1,
+                        }}
+                        className="border border-secondary text-secondary text-sm px-4 py-2 font-roboto-mono font-bold rounded uppercase" >
+                        Mon CV
+                    </motion.a>
+
             </nav>
             <Sidebar isOpen={isOpen} setIsOpen={setIsOpen} />
         </motion.div>
