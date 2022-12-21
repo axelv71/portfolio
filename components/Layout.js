@@ -1,5 +1,6 @@
 import Navigation from "./navigation/Navigation";
 import Head from "next/head";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
     return (
@@ -11,6 +12,7 @@ export default function Layout({ children }) {
             <main className="bg-background min-h-screen">
                 <Navigation />
                 {children}
+                <Footer />
             </main>
         </div>
     )

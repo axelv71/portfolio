@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
 function Project({ project, otherProjects }) {
     return (
         <Layout>
-            <div className="min-h-screen pt-28 px-7">
+            <div className="min-h-screen pt-28 px-7 pb-16">
                 <div className="flex justify-between flex-col lg:flex-row-reverse h-min items-center">
                     <div className="lg:w-3/6 text-gray-50 mb-8">
                         <div className="flex flex-col lg:flex-row-reverse items-baseline">
