@@ -33,7 +33,7 @@ function Contact() {
                     Contacter
                 </motion.a>
             </motion.div>
-            <div className="w-screen h-full">
+            <div className="h-full w-full">
                 <Canvas draggable={false}>
                     <ambientLight intensity={0.5} />
                     <directionalLight position={[-2, 5, 2]} intensity={1} />

@@ -12,7 +12,7 @@ function Navigation() {
         <motion.div
             initial="closed"
             animate={isOpen ? "open" : "closed"}>
-            <nav className={`py-5 px-5 flex items-center justify-between text-sm fixed w-screen z-50 ${styles.nav_gradient}`}>
+            <nav className={`py-5 px-5 flex items-center justify-between text-sm fixed w-full z-50 ${styles.nav_gradient}`}>
                 <div className="hidden md:block">
                     <ItemList setIsOpen={setIsOpen} />
                 </div>

@@ -15,7 +15,7 @@ function Experiences() {
                     hidden: { opacity: 0, scale: 0.2 }
                 }}
                 className="text-gray-50 font-staatliches text-6xl text-center">Expériences</motion.h2>
-            <div className="flex w-screen justify-center">
+            <div className="flex w-full justify-center">
                 <div className="w-full lg:w-3/4 xl:w-1/2 px-4 xl:px-0">
                     {experiences.map((experience, index) => (
                         <ExperienceItem key={index} _id={index} experience={experience} />
