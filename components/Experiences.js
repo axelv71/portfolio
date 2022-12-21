@@ -4,7 +4,7 @@ import {experiences} from "../data/Experiences";
 
 function Experiences() {
     return (
-        <div className="pb-5">
+        <div id="experiences" className="pb-5">
             <motion.h2
                 initial="hidden"
                 whileInView="visible"

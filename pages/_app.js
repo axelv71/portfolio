@@ -23,6 +23,11 @@ const robotoMono = localFont({
             style: 'normal'
         },
         {
+            path: '../fonts/RobotoMono/RobotoMono-Bold.woff2',
+            weight: '700',
+            style: 'normal'
+        },
+        {
             path: '../fonts/RobotoMono/RobotoMono-Italic.woff2',
             weight: '400',
             style: 'italic'

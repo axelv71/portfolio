@@ -5,12 +5,12 @@ import {motion} from "framer-motion";
 
 function Contact() {
     return (
-        <div className="h-screen bg-gradient-to-b from-background via-background to-tertiary flex items-center justify-center">
+        <div id="contact" className="h-screen bg-gradient-to-b from-background via-background to-tertiary flex items-center justify-center">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: false }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.3 }}
                 variants={{
                     visible: { opacity: 1, scale: 1 },
                     hidden: { opacity: 0, scale: 0.2 }

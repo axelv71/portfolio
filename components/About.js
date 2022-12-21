@@ -6,7 +6,7 @@ import styles from '../styles/About.module.css'
 
 function About() {
     return (
-        <div className="flex items-center flex-col md:flex-row pt-6 md:pt-0">
+        <div id="about" className="flex items-center flex-col md:flex-row pt-6 md:pt-0">
             <div className="text-gray-50 md:w-1/2 md:pl-16">
                 <motion.h2
                     initial="hidden"

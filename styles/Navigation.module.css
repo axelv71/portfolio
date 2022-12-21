@@ -1,0 +1,4 @@
+.nav_gradient {
+    background: rgba(4,26,52,0.80);
+    backdrop-filter: blur(10px);
+}
