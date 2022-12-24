@@ -10,10 +10,10 @@ function Home() {
                 <h1 className='text-center text-9xl text-gray-50 font-staatliches'>Axel Vion</h1>
                 <p className='text-center text-gray-50 text-xl font-roboto-mono'>Développeur junior</p>
             </div>
-            <div className="h-screen w-screen">
+            <div className="h-screen w-full">
                 <Canvas camera={{ zoom: 2.5 }} >
                     <Stars />
-                    <OrbitControls enableZoom={false} autoRotate={false} />
+                    <OrbitControls autoRotateSpeed={1} enableZoom={false} autoRotate={true} />
                     <Planet />
                 </Canvas>
             </div>

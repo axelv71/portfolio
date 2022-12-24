@@ -41,14 +41,14 @@ function Project({ project, otherProjects }) {
                             {project.links ? (
                                 <div className="flex justify-center lg:justify-start w-full lg:w-fit">
                                     {project.links.website ? (
-                                        <Link href={project.links.website}>
+                                        <a target="_blank" href={project.links.website} rel="noreferrer">
                                             <FontAwesomeIcon className="text-xl text-secondary mr-3" icon={faArrowUpRightFromSquare} />
-                                        </Link>
+                                        </a>
                                     ) : ''}
                                     {project.links.github ? (
-                                        <Link href={project.links.github}>
+                                        <a target="_blank" href={project.links.github} rel="noreferrer">
                                             <FontAwesomeIcon className="text-xl text-secondary" icon={faGithub} />
-                                        </Link>
+                                        </a>
                                     ) : ''}
                                 </div>
                             ) : ''}

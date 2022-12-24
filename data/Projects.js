@@ -22,7 +22,9 @@ export const projects = [
         "name": "Site don du sang",
         "description": "Les objectifs principaux du projet sont la sensibilisation des collégiens, lycéen etc… du groupe Mont-Roland, aux dons du sang et de la moelle osseuse, mais encore à la localisation des associations qui le collecte. Le rendu final est un site internet fonctionnant avec le framework Laravel. Il est hébergé dans le réseau intranet du lycée. Il a été effectuer en groupe de 3 dans le cadre de ma deuxième année de BTS SIO",
         "image": "ids.png",
-        "links": {},
+        "links": {
+            "github": "https://github.com/Les-codeurs-du-sang/website"
+        },
         "skills": ["Laravel", "Bootstrap"]
     },
     {
@@ -31,8 +33,8 @@ export const projects = [
         "description": "Ce projet est le portfolio que vous êtes en train de consulter. Il a pour but de me présenter moi ainsi que mon parcours professionnel. C’était également l’occasion pour moi d’apprendre de nouvelles technologies comme NextJS ou encore Framer motion. ",
         "image": "portfolio.png",
         "links": {
-            "github": "localhost:3000",
-            "website": "localhost:3000"
+            "github": "https://github.com/UnPotDeYaourt/portfolio/tree/main",
+            "website": "https://axel-vion.fr/"
         },
         "skills": ["NextJS", "Tailwindcss", "Framer Motion", "Docker"]
     }

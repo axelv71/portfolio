@@ -48,14 +48,14 @@ function ProjectItem({ project }) {
                     {project.links ? (
                         <div className="flex ml-2">
                             {project.links.website ? (
-                                <Link href={project.links.website}>
+                                <a target="_blank" href={project.links.website} rel="noreferrer">
                                     <FontAwesomeIcon className="text-sm text-secondary mr-2" icon={faArrowUpRightFromSquare} />
-                                </Link>
+                                </a>
                             ) : ''}
                             {project.links.github ? (
-                                <Link href={project.links.github}>
+                                <a target="_blank" href={project.links.github} rel="noreferrer">
                                     <FontAwesomeIcon className="text-sm text-secondary" icon={faGithub} />
-                                </Link>
+                                </a>
                             ) : ''}
                         </div>
                     ) : ''}
