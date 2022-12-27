@@ -1,6 +1,6 @@
 import {motion} from "framer-motion";
-import ExperienceItem from "./ExperienceItem";
-import {experiences} from "../data/Experiences";
+import ExperienceItem from "../items/ExperienceItem";
+import {experiences} from "../../data/Experiences";
 
 function Experiences() {
     return (

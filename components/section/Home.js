@@ -1,7 +1,7 @@
 import {Canvas} from "@react-three/fiber";
 import {OrbitControls, Stars} from "@react-three/drei";
-import Planet from "./Planet";
-import Mouse from "./Mouse";
+import Planet from "../3d/Planet";
+import Mouse from "../Mouse";
 
 function Home() {
     return (
@@ -12,7 +12,7 @@ function Home() {
             </div>
             <div className="h-screen w-full">
                 <Canvas camera={{ zoom: 2.5 }} >
-                    <Stars />
+                    <Stars count={5000} />
                     <OrbitControls autoRotateSpeed={1} enableZoom={false} autoRotate={true} />
                     <Planet />
                 </Canvas>

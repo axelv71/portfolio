@@ -9,7 +9,7 @@ import {useRouter} from "next/router";
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 const staatliches = localFont({
-    src: '../fonts/Staatliches.woff2',
+    src: '../fonts/Staatliches/Staatliches.woff2',
     weight: '400',
     subsets: ['latin'],
     variable: '--font-staatliches'

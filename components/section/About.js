@@ -1,8 +1,8 @@
 import {Canvas} from "@react-three/fiber";
-import Boi from "./Boi";
+import Boi from "../3d/Boi";
 import {OrbitControls} from "@react-three/drei";
 import {motion} from "framer-motion";
-import styles from '../styles/About.module.css'
+import styles from '../../styles/About.module.css'
 
 function About() {
     return (
@@ -53,7 +53,8 @@ function About() {
                     </ul>
                 </motion.div>
             </div>
-            <div className=" h-128 md:w-1/2 w-screen">
+            <div className=" h-128 md:w-1/2 w-full relative">
+                <div className="absolute w-full h-full z-10"></div>
                 <Canvas className="rounded" camera={{ zoom: 1 }}>
                     <OrbitControls enableZoom={false} enableRotate={false} autoRotate={false} />
                     <Boi />

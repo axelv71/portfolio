@@ -1,5 +1,5 @@
-import {projects} from "../data/Projects";
-import ProjectItem from "./ProjectItem";
+import {projects} from "../../data/Projects";
+import ProjectItem from "../items/ProjectItem";
 import {motion} from "framer-motion";
 
 function Projects() {

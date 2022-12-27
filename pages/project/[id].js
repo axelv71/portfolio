@@ -1,14 +1,14 @@
 import {projects} from "../../data/Projects";
 import Layout from "../../components/Layout";
 import Image from "next/image";
-import SkillPill from "../../components/SkillPill";
+import SkillPill from "../../components/items/SkillPill";
 import styles from "../../styles/Project.module.css"
 import {motion} from "framer-motion";
 import Link from "next/link";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faArrowUpRightFromSquare} from "@fortawesome/free-solid-svg-icons";
 import {faGithub} from "@fortawesome/free-brands-svg-icons";
-import ProjectItem from "../../components/ProjectItem";
+import ProjectItem from "../../components/items/ProjectItem";
 
 export async function getStaticPaths() {
     const paths = projects.map((project) => ({

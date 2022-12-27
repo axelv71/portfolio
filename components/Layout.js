@@ -1,6 +1,6 @@
 import Navigation from "./navigation/Navigation";
 import Head from "next/head";
-import Footer from "./Footer";
+import Footer from "./section/Footer";
 
 export default function Layout({ children }) {
     return (
