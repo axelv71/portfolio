@@ -27,7 +27,7 @@ function About() {
                         visible: { opacity: 1, x: 0 },
                         hidden: { opacity: 0, x: -100 }
                     }}
-                    className="font-roboto-mono mt-4 text-justify px-4 md:px-0">Je m’appelle Axel Vion, j’ai 20 ans et je suis actuellement en <span className="text-secondary">Bachelor Concepteur Développeur d’application</span> au <span className="text-secondary">CESI</span>. Je suis passionné par l’informatique et j’aspire à faire de ma passion mon métier.</motion.p>
+                    className="font-roboto-mono mt-4 text-justify px-4 md:px-0">Je m’appelle Axel Vion, j’ai 20 ans et je suis actuellement en <span className="text-secondary">Bachelor Concepteur Développeur d’applications</span> au <span className="text-secondary">CESI</span>. Je suis passionné par l’informatique et j’aspire à faire de ma passion mon métier.</motion.p>
                 <motion.div
                     initial="hidden"
                     whileInView="visible"

@@ -2,7 +2,7 @@ export const projects = [
     {
         "_id": 1,
         "name": "Copain Cabriolet",
-        "description": "Le site Copain Cabriolet a pour objectif de promouvoir l'entreprise en mettant en avant ses produits et services. Il permet également aux clients de générer facilement des devis en ligne, ce qui leur permet d'avoir rapidement une estimation de prix pour les produits ou services qui les intéressent. Le site comprend également un système de gestion des produits organisé par catégories et par véhicules. Cela permet aux clients de trouver facilement les produits qui les intéressent en fonction de leur véhicule et de la catégorie de produits qui les intéresse.",
+        "description": "Le site Copain Cabriolet a pour objectif de promouvoir l'entreprise en mettant en avant ses produits et services. Il permet également aux clients de générer facilement des devis en ligne, ce qui leur permet d'avoir rapidement une estimation de prix pour les produits ou services qui les intéressent. Le site comprend également un système de gestion des produits organisés par catégories et par véhicules. Cela permet aux clients de trouver facilement les produits qui les intéressent en fonction de leur véhicule et de la catégorie de produits qui les intéresse.",
         "image": "cc.png",
         "links:": {},
         "skills": ["Laravel", "Javascript", "Github", "Tailwindcss"]
