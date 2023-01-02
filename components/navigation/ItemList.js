@@ -1,37 +1,52 @@
 import Link from "next/link";
+import {useRouter} from "next/router";
 
 function ItemList({setIsOpen}) {
+    const router = useRouter();
+    const navigate = (target) => {
+        setIsOpen();
+        if (router.pathname === "/") {
+            document.getElementById(target).scrollIntoView({behavior: "smooth"});
+        } else {
+            router.push("/").then(() => {
+                setTimeout(() => {
+                    document.getElementById(target).scrollIntoView({behavior: "smooth"});
+                }, 1000);
+            });
+        }
+    }
+
     return (
         <ul className="font-roboto-mono flex flex-col md:flex-row text-gray-50">
-            <li className="mr-4  hover:text-secondary hover:border-b hover:border-secondary">
-                <Link onClick={setIsOpen} href="/">
+            <li className="mr-4 hover:text-secondary hover:border-b hover:border-secondary">
+                <button onClick={() => navigate('home')}>
                     <span className="text-secondary mr-1">01.</span>
                     Accueil
-                </Link>
+                </button>
             </li>
             <li className="mr-4 hover:text-secondary hover:border-b hover:border-secondary mt-5 md:mt-0">
-                <Link onClick={setIsOpen} href="/#about">
+                <button onClick={() => navigate('about')}>
                     <span className="text-secondary mr-1">02.</span>
                     À propos
-                </Link>
+                </button>
             </li>
             <li className="mr-4  hover:text-secondary hover:border-b hover:border-secondary mt-5 md:mt-0">
-                <Link onClick={setIsOpen} href="/#projects">
+                <button onClick={() => navigate('experiences')}>
                     <span className="text-secondary mr-1">03.</span>
-                    Projets
-                </Link>
+                    Expériences
+                </button>
             </li>
             <li className="mr-4  hover:text-secondary hover:border-b hover:border-secondary mt-5 md:mt-0">
-                <Link onClick={setIsOpen} href="/#experiences">
+                <button onClick={() => navigate('projects')}>
                     <span className="text-secondary mr-1">04.</span>
-                    Expériences
-                </Link>
+                    Projets
+                </button>
             </li>
             <li className="hover:text-secondary hover:border-b hover:border-secondary mt-5 md:mt-0">
-                <Link onClick={setIsOpen} href="/#contact">
+                <button onClick={() => navigate('contact')}>
                     <span className="text-secondary mr-1">05.</span>
                     Contact
-                </Link>
+                </button>
             </li>
         </ul>
     )

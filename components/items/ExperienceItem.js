@@ -84,8 +84,8 @@ function ExperienceItem({ experience, _id }) {
                             </div>
                             <div className="mt-3 flex">
                                 <div>
-                                    <p className="text-gray-50 font-roboto-mono break-words text-sm pr-0 md:pr-9">{experience.description}</p>
-                                    <div className="mt-5 flex flex-wrap">
+                                    <p className="text-gray-50 font-roboto-mono break-words text-sm pr-0 md:pr-9 text-justify">{experience.description}</p>
+                                    <div className="mt-3 flex flex-wrap">
                                         {experience.skills.map((skill, index) => <SkillPill key={`${_id}${index}`} skill={skill} />)}
                                     </div>
                                 </div>

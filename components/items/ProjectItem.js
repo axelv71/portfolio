@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 
 function ProjectItem({ project }) {
     function truncate(string) {
-        const MAX_LENGTH = 250
+        const MAX_LENGTH = 240
         if (string.length > MAX_LENGTH)
         {
             return string.slice(0, MAX_LENGTH) + "..."
@@ -60,7 +60,7 @@ function ProjectItem({ project }) {
                         </div>
                     ) : ''}
                 </div>
-                <p className="text-gray-50 font-roboto-mono text-sm overflow-hidden">{truncate(project.description)}</p>
+                <p className="text-gray-50 font-roboto-mono text-sm overflow-hidden text-justify mt-1">{truncate(project.description)}</p>
             </div>
         </motion.div>
     )

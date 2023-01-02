@@ -5,7 +5,7 @@ export const experiences = [
         "from": "Sept 2022",
         "to": "Actuellement",
         "logo": "inokufu.png",
-        "description": "Pendant mon alternance, deux missions m'ont été confié. La première, consiste à développer une application mobile se basant sur Moodle, moderne, interactive et qui récolte les traces d’apprentissage. La seconde est d'améliorer la visualisation de ces traces grâce à Grafana.",
+        "description": "Pendant mon alternance, j'ai été chargé de deux projets. Le premier consiste à créer une application mobile basée sur Moodle, conçue pour être interactive et permettre de suivre l'apprentissage des utilisateurs. Le second projet vise à rendre ces traces d'apprentissage plus visibles grâce à l'utilisation de Grafana.",
         "company": {
             "name": "Inokufu",
             "location": "Lyon (Hybride)",
@@ -19,7 +19,7 @@ export const experiences = [
         "from": "Jan 2022",
         "to": "Fev 2022",
         "logo": "ids.png",
-        "description": "Lors de ce stage, j’ai installé un serveur LDAP et je l’ai relié aux différents services de l’entreprise. J’ai également développé une interface de gestion de celui-ci. Les technologies qui ont été utilisées sont VueJS et Node.js.",
+        "description": "Au cours de ce stage, j'ai installé un serveur LDAP et j'ai mis en place une interface de gestion pour ce dernier. J'ai également établi une connexion entre le serveur et les différents services de l'entreprise. Pour réaliser ce projet, j'ai utilisé les technologies VueJS et Node.js.",
         "company": {
             "name": "Ideal Solutions",
             "location": "Chalon-sur-Saône",
@@ -33,7 +33,7 @@ export const experiences = [
         "from": "Mai 2021",
         "to": "Juin 2021",
         "logo": "cc.jpg",
-        "description": "Durant ce stage, j’ai développé un site internet de présentation de l’entreprise qui permet également aux clients de générer leurs devis. Le site a été développé avec le framework Laravel.",
+        "description": "Au cours de ce stage, j'ai développé un site web pour présenter l'entreprise et permettre aux clients de créer des devis en ligne. Le site a été construit avec le framework Laravel.",
         "company": {
             "name": "Copain Cabriolet",
             "location": "Buxy"

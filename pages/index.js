@@ -10,10 +10,15 @@ import Contact from "../components/section/Contact";
 function Index() {
   return (
     <Layout>
+        <div id="home" />
         <Home />
+        <div id="about" />
         <About />
+        <div id="experiences" />
         <Experiences />
+        <div id="projects" />
         <Projects />
+        <div id="contact" />
         <Contact />
     </Layout>
   )

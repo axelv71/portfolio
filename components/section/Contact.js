@@ -5,7 +5,7 @@ import {motion} from "framer-motion";
 
 function Contact() {
     return (
-        <div id="contact" className="h-screen bg-gradient-to-b from-background via-background to-tertiary flex items-center justify-center">
+        <div className="h-screen bg-gradient-to-b from-background via-background to-tertiary flex items-center justify-center">
             <motion.div
                 initial="hidden"
                 whileInView="visible"
@@ -30,7 +30,7 @@ function Contact() {
                     whileTap={{ scale: 1.1 }}
                     className="bg-tertiary text-center text-gray-50 text-normal px-4 py-2 font-rubik font-bold uppercase w-fit mt-4 unselectable"
                 >
-                    Contacter
+                    Me contacter
                 </motion.a>
             </motion.div>
             <div className="h-full w-full">

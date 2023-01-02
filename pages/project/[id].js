@@ -33,7 +33,7 @@ export async function getStaticProps({ params }) {
 function Project({ project, otherProjects }) {
     return (
         <Layout>
-            <div className="min-h-screen pt-28 px-7 pb-16">
+            <div className="min-h-screen pt-28 px-4 lg:px-7 pb-16">
                 <div className="flex justify-between flex-col lg:flex-row-reverse h-min items-center">
                     <div className="lg:w-3/6 text-gray-50 mb-8">
                         <div className="flex flex-col lg:flex-row-reverse items-baseline">
@@ -53,8 +53,8 @@ function Project({ project, otherProjects }) {
                                 </div>
                             ) : ''}
                         </div>
-                        <p className="font-roboto-mono text-center lg:text-right">{project.description}</p>
-                        <div className="text-center lg:text-right mt-5 flex flex-wrap justify-center lg:justify-end">
+                        <p className="font-roboto-mono text-justify lg:text-right mt-1">{project.description}</p>
+                        <div className="text-center lg:text-right mt-3 flex flex-wrap justify-center lg:justify-end">
                             {project.skills.map((skill, index) => <SkillPill key={`${project._id}${index}`} skill={skill} />)}
                         </div>
                     </div>
@@ -69,7 +69,7 @@ function Project({ project, otherProjects }) {
                 </div>
 
                 <div className=" py-12 mt-7 grid grid-cols-5">
-                    <div className="col-span-5 lg:col-span-3 col-start-1 lg:col-start-2 px-4 sm:px-10 lg:px-0">
+                    <div className="col-span-5 lg:col-span-3 col-start-1 lg:col-start-2 px-0 sm:px-10 lg:px-0">
                         <motion.h2
                             initial="hidden"
                             whileInView="visible"

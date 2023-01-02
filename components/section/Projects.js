@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 
 function Projects() {
     return (
-        <div id="projects" className="py-12 grid grid-cols-5">
+        <div className="pb-12 pt-16 sm:pt-24 grid grid-cols-5 ">
             <div className="col-span-5 lg:col-span-3 col-start-1 lg:col-start-2 px-4 sm:px-10 lg:px-0">
                 <motion.h2
                     initial="hidden"
