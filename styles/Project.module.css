@@ -1,0 +1,31 @@
+.drop_shadow_image {
+    box-shadow: none;
+}
+
+.drop_shadow_image:hover {
+    box-shadow: none;
+    transition:  none;
+    scale: none;
+}
+
+.drop_shadow_image:not(:hover) {
+    box-shadow: none;
+    transition:  none;
+}
+
+@media (min-width: 1280px) {
+    .drop_shadow_image {
+        box-shadow: -30px 30px 0px 0px #740CDC;
+    }
+
+    .drop_shadow_image:hover {
+        box-shadow: 20px -20px 0px 0px #00FFE0;
+        transition: ease-in-out 0.3s;
+        scale: 1.03;
+    }
+
+    .drop_shadow_image:not(:hover) {
+        box-shadow: -30px 30px 0px 0px #740CDC;
+        transition: ease-in-out 0.3s;
+    }
+}
