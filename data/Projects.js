@@ -1,5 +1,15 @@
 export const projects = [
     {
+        "_id": 4,
+        "name": "SendShort",
+        "description": "SendShort est un SaaS dont je suis co-créateur. Il permet de transformer des vidéos longues en format Short en utilisant l'intelligence artificielle. L'outil, permet d'ajouter des sous-tires, de la musique, des vidéos libres de droits et bien plus encore. Notre objectif est de permettre aux créateurs de contenu de gagner du temps en créant des vidéos courtes et engageantes pour les réseaux sociaux.",
+        "image": "sendshort.png",
+        "links": {
+            "website": "https://www.sendshort.ai/"
+        },
+        "skills": ["AWS", "Docker", "Next.js", "Python", "Google Cloud", "Typescript", "IA", "Stripe", "MUI"]
+    },
+    {
         "_id": 1,
         "name": "Copain Cabriolet",
         "description": "Le site Copain Cabriolet a pour objectif de promouvoir l'entreprise en mettant en avant ses produits et services. Il permet également aux clients de générer facilement des devis en ligne, ce qui leur permet d'avoir rapidement une estimation de prix pour les produits ou services qui les intéressent. Le site comprend également un système de gestion des produits organisés par catégories et par véhicules. Cela permet aux clients de trouver facilement les produits qui les intéressent en fonction de leur véhicule et de la catégorie de produits qui les intéresse.",
@@ -27,15 +37,4 @@ export const projects = [
         },
         "skills": ["Laravel", "Bootstrap"]
     },
-    {
-        "_id": 4,
-        "name": "Portfolio",
-        "description": "Ce projet est le portfolio que vous êtes en train de consulter. Il a pour but de me présenter moi ainsi que mon parcours professionnel. C’était également l’occasion pour moi d’apprendre de nouvelles technologies comme NextJS ou encore Framer motion. ",
-        "image": "portfolio.png",
-        "links": {
-            "github": "https://github.com/UnPotDeYaourt/portfolio/tree/main",
-            "website": "https://axel-vion.fr/"
-        },
-        "skills": ["NextJS", "Tailwindcss", "Framer Motion", "Docker"]
-    }
 ]

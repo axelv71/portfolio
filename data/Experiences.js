@@ -1,9 +1,36 @@
 export const experiences = [
     {
+        "_id": 5,
+        "title": "(Entrepreneuriat) Co-créateur",
+        "from": "Juin 2023",
+        "to": "Actuellement",
+        "logo": "sendshort.png",
+        "description": "Création d'un SaaS permettant de transformer des vidéos longues en format Short en utilisant l'intelligence artificielle. L'outil, permet d'ajouter des sous-titres, de la musique, des effets et bien plus encore.",
+        "company": {
+            "name": "SendShort",
+            "website": "https://www.sendshort.ai/"
+        },
+        "skills": ["AWS", "Docker", "Next.js", "Python", "Google Cloud", "Typescript", "IA"]
+    },
+    {
+        "_id": 4,
+        "title": "(Alternance) Ingénieur logiciel",
+        "from": "Sept 2023",
+        "to": "Actuellement",
+        "logo": "cebfc.png",
+        "description": "Durant mon alternance à la Caisse d'Epargne de Bourgogne Franche-Comté (CEBFC), j'ai développé diverses applications web destinées aux collaborateurs de la banque.",
+        "company": {
+            "name": "CEBFC",
+            "location": "Dijon",
+            "website": "https://www.caisse-epargne.fr/bourgogne-franche-comte/"
+        },
+        "skills": ["Angular", "PHP", "Symfony", "Gestion de projet"]
+    },
+    {
         "_id": 3,
         "title": "(Alternance) Développeur",
         "from": "Sept 2022",
-        "to": "Actuellement",
+        "to": "Sept 2023",
         "logo": "inokufu.png",
         "description": "Pendant mon alternance, j'ai été chargé de deux projets. Le premier consiste à créer une application mobile basée sur Moodle, conçue pour être interactive et permettre de suivre l'apprentissage des utilisateurs. Le second projet vise à rendre ces traces d'apprentissage plus visibles grâce à l'utilisation de Grafana.",
         "company": {

@@ -71,12 +71,20 @@ function ExperienceItem({ experience, _id }) {
                                     <i className="text-tertiary mr-3"><FontAwesomeIcon className="text-xl" icon={faCalendar} /></i>
                                     {experience.from} - {experience.to}
                                 </div>
-                                <div className="flex items-center font-roboto-mono text-sm italic">
-                                    <i className="text-tertiary mr-3"><FontAwesomeIcon className="text-xl" icon={faLocationDot} /></i>
-                                    {experience.company.location}
-                                </div>
-                                { experience.company.website ? (
-                                    <div className="flex items-center font-roboto-mono text-sm italic ml-0 sm:ml-5 mt-1 sm:mt-0">
+                                { experience.company.location ? (
+                                    <div className="flex items-center font-roboto-mono mr-0 sm:mr-5 text-sm italic">
+                                        <i className="text-tertiary mr-3">
+                                            <FontAwesomeIcon
+                                                className="text-xl"
+                                                icon={faLocationDot}
+                                            />
+                                        </i>
+                                        {experience.company.location}
+                                    </div>
+                                ) : ''}
+                                {experience.company.website ? (
+                                    <div
+                                        className="flex items-center font-roboto-mono text-sm italic mt-1 sm:mt-0">
                                         <i className="text-tertiary mr-3"><FontAwesomeIcon className="text-xl" icon={faLink} /></i>
                                         <a className="hover:text-secondary duration-200 ease-in" href={experience.company.website}>{experience.company.website}</a>
                                     </div>

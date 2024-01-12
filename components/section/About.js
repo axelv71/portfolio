@@ -27,7 +27,11 @@ function About() {
                         visible: { opacity: 1, x: 0 },
                         hidden: { opacity: 0, x: -100 }
                     }}
-                    className="font-roboto-mono mt-4 text-justify px-4 md:px-0">Je m’appelle Axel Vion, j’ai 20 ans et je suis actuellement en <span className="text-secondary">Bachelor Concepteur Développeur d’applications</span> au <span className="text-secondary">CESI</span>. Je suis passionné par l’informatique et j’aspire à faire de ma passion mon métier.</motion.p>
+                    className="font-roboto-mono mt-4 text-justify px-4 md:px-0"
+                >
+                    {/* eslint-disable-next-line react/no-unescaped-entities */}
+                    Je m’appelle Axel Vion, j’ai 21 ans et je suis actuellement en étude <span className="text-secondary">d'ingénieur informatique en alternance</span> au <span className="text-secondary">CESI</span>. Je suis passionné par l’informatique et j’aspire à faire de ma passion mon métier.
+                </motion.p>
                 <motion.div
                     initial="hidden"
                     whileInView="visible"
@@ -41,9 +45,9 @@ function About() {
                     <p>Voici quelques-unes de mes compétences:</p>
                     <div className="w-full">
                         <ul className={`${styles.list_triangle} mt-1 marker:text-secondary inline-block md:block`}>
-                            <li className="w-fit md:w-full">Java</li>
+                            <li className="w-fit md:w-full">Tensorflow</li>
                             <li className="w-fit md:w-full">ReactJS</li>
-                            <li className="w-fit md:w-full">VueJS</li>
+                            <li className="w-fit md:w-full">Typescript</li>
                             <li className="w-fit md:w-full">Docker</li>
                             <li className="w-fit md:w-full">NodeJS</li>
                             <li className="w-fit md:w-full">Laravel</li>
@@ -51,8 +55,10 @@ function About() {
                             <li className="w-fit md:w-full">C#</li>
                             <li className="w-fit md:w-full">React Native</li>
                             <li className="w-fit md:w-full">Git</li>
-                            <li className="w-fit md:w-full">NodeJS</li>
+                            <li className="w-fit md:w-full">NextJS</li>
                             <li className="w-fit md:w-full">SQL</li>
+                            <li className="w-fit md:w-full">C++</li>
+                            <li className="w-fit md:w-full">Python</li>
                         </ul>
                     </div>
                 </motion.div>

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import {useRouter} from "next/router";
 
 function ItemList({setIsOpen}) {
@@ -40,12 +39,6 @@ function ItemList({setIsOpen}) {
                 <button onClick={() => navigate('projects')}>
                     <span className="text-secondary mr-1">04.</span>
                     Projets
-                </button>
-            </li>
-            <li className="hover:text-secondary hover:border-b hover:border-secondary mt-5 md:mt-0">
-                <button onClick={() => navigate('contact')}>
-                    <span className="text-secondary mr-1">05.</span>
-                    Contact
                 </button>
             </li>
         </ul>

@@ -8,7 +8,7 @@ function Home() {
         <div className="bg-gradient-radial from-[#26394F] via-background to-background flex items-center justify-center h-screen">
             <div className="absolute unselectable z-10">
                 <h1 className='text-center text-9xl text-gray-50 font-staatliches'>Axel Vion</h1>
-                <p className='text-center text-gray-50 text-xl font-roboto-mono'>Développeur junior</p>
+                <p className='text-center text-gray-50 text-xl font-roboto-mono'>Apprenti Ingénieur Logiciel</p>
             </div>
             <div className="h-screen w-full">
                 <Canvas camera={{ zoom: 2.5 }} >
