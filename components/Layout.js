@@ -6,7 +6,7 @@ export default function Layout({ children }) {
     return (
         <div className="bg-background">
             <Head>
-                <title>Axel VION 🚀</title>
+                <title>Axel V.🚀</title>
                 <meta name="theme-color" content="#041A34" />
             </Head>
             <main className="bg-background min-h-screen">
